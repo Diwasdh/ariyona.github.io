@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Resume</title>
+    <style>
+        * {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Robotic', sans-serif;
+        }
+        
+        ul li {
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        .exp {
+            margin-top: 10%;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: lightgray;
+            width: 70%;
+            margin: 0px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #leftNav {
+            width: 30vh;
+            background-color:skyblue;
+            padding: 8px;
+        }
+        
+        #bodyDiv {
+            padding-left: 30vh;
+            position: absolute;
+        }
+        
+        #leftNav li:nth-child(odd) {
+            background-color: skyblue;
+            font-size: 16px;
+        }
+        
+        .personal-info {
+            background-color:lightgray;
+        }
+        
+        .skill-bar {
+            width: 70%;
+            background-color: aliceblue;
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 9px;
+            height: 20px;
+        }
+        
+        .skill1-level-bar {
+            width: 65%;
+            background-color: rgb(138, 130, 130);
+            height: inherit;
+        }
+        
+        .skill2-level-bar {
+            width: 85%;
+            background-color: rgb(139, 127, 127);
+            height: inherit;
+        }
+        
+        .skill3-level-bar {
+            width: 75%;
+            background-color: rgb(119, 111, 111);
+            height: inherit;
+        }
+        
+        li::marker {
+            font-size: medium;
+            font-weight: bold;
+        }
+        
+        #bodyDiv>div>div {
+            display: flex;
+            text-align: center;
+            align-items: baseline;
+            font-family: sans-serif;
+        }
+        
+        #bodyDiv>div>div:nth-child(even) {
+            border-bottom: solid 2px black;
+        }
+        
+        #bodyDiv>div>div:nth-child(odd) {
+            border-bottom: solid 2px rgb(32, 32, 32);
+        }
+        
+        #bodyDiv>div>div>h3 {
+            margin-right: 13rem;
+        }
+        
+        #bodyDiv>div>ul {
+            padding-left: 20rem;
+        }
+        
+        #bodyDiv h1 {
+            color: rgb(81, 81, 139);
+        }
+        
+        #bodyDiv h3 {
+            color: rgb(106, 101, 150)
+        }
+        
+        #leftNav div {
+            margin: 10px 0;
+        }
+        
+        ul,
+        li {
+            margin: 10px 0;
+        }
+        .back{
+            font-size: 16px;
+            font-weight: bold;
+            position: absolute;
+            padding: 5px;
+            border-radius: 5px;
+            width: 60px;
+            background-color :antiquewhite;
+            color:black;
+            right: 20%;
+            transition: transform .5s;
+        }
+        .back:hover{
+            transform: scale(1.2);
+            background-color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="exp">
+        <a href="index.html"><button class="back">Back</button></a>
+        <div class="nav-bar">
+            <nav id="leftNav">
+                <div>
+                    <h1><B>Ariyona Baskota</B></h1>
+
+                </div>
+                <div class="personal-info">
+                    <B>PERSONAL-INFO</B>
+                </div>
+                <ul>
+                    <li><B>EMAIL</B></li>
+                    <li>ariyona59@gmail.com</li>
+                    <li><b>PHONE NUMBER</b></li>
+                    <li>98******35</li>
+
+                    <li><B>ADDRESS</B></li>
+                    <li>Hetauda,Makwanpur</li>
+                </ul>
+                <div class="personal-info">
+                    <B>MY SKILLS</B>
+                </div>
+                <div>
+                    Problem-solving
+                    <div class="skill-bar">
+
+                        <div class="skill1-level-bar">
+                            75%
+                        </div>
+                    </div>
+
+                </div>
+                Leadership
+                <div class="skill-bar">
+
+                    <div class="skill2-level-bar">
+                        70%
+                    </div>
+                </div>
+
+                Computer skills
+                <div class="skill-bar">
+
+                    <div class="skill3-level-bar">
+                        65%
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="bodyDiv">
+            <div>
+                <center><h1><u>Education</u></center> </h1>
+                <br>
+                <div>
+                    <h3></h3>
+                    <b>G.S Niketan higher secondary school.</b>
+                </div>
+
+                <ul>
+                    <li>I got quality knowledge there and passed my SEE</li>
+                    <li>by achieving A grade.</li>
+                </ul>
+            </div>
+            
+            
+            <div>
+
+                <div>
+                    <h3></h3>
+                    <b> Hetauda school of management and social science.</b>
+                </div>
+
+                <ul>
+                    <li>I completed my higher secondary education(+2) by</li>
+                    <li>achieving 3.15 g.p.a and my faculty was Science.</li>
+                    
+                </ul>
+            </div>
+            <div>
+
+                <div>
+                    <h3></h3>
+                    <b>The British College</b>
+                </div>
+
+                <ul>
+                    <li>Currently, I am studying Bachelor here. </li>
+
+                    <li> My major is Computing.</li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+</body>
+
+</html>
